@@ -63,7 +63,6 @@ namespace openXML_CSV_ServiceStack
             importDynamics.startImportDynamics();
 
             Console.WriteLine("資料上傳完畢");
-            Console.ReadLine();
             return invoices;
         }
         static int differenceDate(DateTime oldDate,DateTime newDate)

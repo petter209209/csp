@@ -17,8 +17,7 @@ namespace openXML_CSV_ServiceStack
         public string Quantity { get; set; }
         public int ChargeDaterange { get; set; }
         public int ChargeStartMonthDays { get; set; }
-        
-        //塞入資料
+        //塞入資料 --目前沒有用到
         public void addvalue(string propName, string value)
         {
             if (propName.Equals("CustomerName"))

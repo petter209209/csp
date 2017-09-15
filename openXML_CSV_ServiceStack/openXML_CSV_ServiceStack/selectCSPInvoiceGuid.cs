@@ -14,7 +14,7 @@ namespace openXML_CSV_ServiceStack
         public static IOrganizationService service;
         public Guid myGuid { get; set; }
         public string message { get; set; }
-        public selectCSPInvoiceGuid(IOrganizationService importService, string improtnweName)
+        public selectCSPInvoiceGuid(IOrganizationService importService,string improtnweName)
         {
             nweName = improtnweName;
             service = importService;
@@ -44,8 +44,7 @@ namespace openXML_CSV_ServiceStack
             else
             {
                 message = "Successfully crawl Guid";
-                var newNameID = result.Entities[0].Attributes["new_csp_cloud_invoiceid"];
-                myGuid = (Guid)newNameID;
+                myGuid = (Guid)result.Entities[0].Attributes["new_csp_cloud_invoiceid"];
             }
         }
     }
